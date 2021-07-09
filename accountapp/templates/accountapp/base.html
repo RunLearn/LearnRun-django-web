@@ -4,6 +4,12 @@
 
    <div style = "margin: 2rem; text-align: center">
        <h1>떡볶이</h1>
+
+       <form action="/account/Iam/" method="POST">
+            {% csrf_token %}
+           <input type="submit" class="btn btn-warning">
+       </form>
+
        <h3>{{  text }}</h3>
    </div>
 

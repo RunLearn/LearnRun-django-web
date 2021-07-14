@@ -8,9 +8,11 @@ app_name = 'accountapp'
 urlpatterns = [
     path('Iam/', account, name = 'account'),
 
-    path('login/', LoginView.as_view(template='accountapp/login.html'),name='login'),
+    path('login/', LoginView.as_view(template_name='accountapp/login.html'),
+         name='login'),
 
-    path('logout/', LogoutView.as_view(),name='logout'),
+    path('logout/', LogoutView.as_view(template_name='accountapp/logout.html'),
+         name='logout'),
 
     path('create/',AccountCreateView.as_view(), name = 'create')
 ]

@@ -18,6 +18,11 @@
         </span>
         {% else %}
         <span>
+        <a href="{% url 'accountapp:detail' pk=user.pk %}">
+            마이페이지
+        </a>
+        </span>
+        <span>
             <a href="{% url 'accountapp:logout' %}">
                 로그아웃
             </a>

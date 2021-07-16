@@ -13,3 +13,8 @@
 .learnrun_footer_logo{
     font-family: 'Yeon Sung', cursive;
 }
+
+.mw-500{
+    max-width : 500px;
+    padding: 1rem 1.5rem;
+}

@@ -15,6 +15,11 @@
             회원정보 수정
             </a>
         </div>
+        <div>
+            <a href="{% url 'accountapp:delete' pk=target_user.pk %}">
+            계정 삭제
+            </a>
+        </div>
     </div>
 
 {% endblock %}

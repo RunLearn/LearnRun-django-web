@@ -11,7 +11,7 @@ from accountapp.decorator import account_ownership_required
 from accountapp.forms import AccountCreationForm
 from accountapp.models import NewModel
 
-@login_required()
+@login_required(login_url= reverse_lazy('accountapp:login'))
 def account(request):
         if request.method == "POST":
 

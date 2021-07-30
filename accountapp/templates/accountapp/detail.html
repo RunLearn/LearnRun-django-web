@@ -27,16 +27,19 @@
         <div>
             {{ target_user.date_joined }}
         </div>
+        {% if target_user == user %}
             <div>
-                <a href="{% url 'accountapp:update' pk=target_user.pk %}">
-                회원정보 수정
+                <a href="{% url 'accountapp:update' pk=target_user.pk %}"
+                    class="material-icons round-botton mx-1">
+                settings
+                </a>
+
+                <a href="{% url 'accountapp:delete' pk=target_user.pk %}"
+                   class="material-icons round-botton mx-1">
+                close
                 </a>
             </div>
-            <div>
-                <a href="{% url 'accountapp:delete' pk=target_user.pk %}">
-                계정 삭제
-                </a>
-            </div>
+        {% endif %}
     </div>
 
 {% endblock %}

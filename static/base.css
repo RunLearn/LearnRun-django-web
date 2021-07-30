@@ -29,3 +29,15 @@
 .NNS_B{
     font-family: "NanumSquareB", cursive;
 }
+
+.round-botton{
+    color: deepskyblue;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 20rem;
+    padding: 0.2rem;
+}
+
+.round-botton:hover{
+    color: skyblue;
+}

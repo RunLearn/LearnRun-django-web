@@ -10,7 +10,7 @@ class Comment(models.Model):
                                 related_name='comment',
                                 null=True)
 
-    wrtier = models.ForeignKey(User,
+    writer = models.ForeignKey(User,
                                on_delete=models.SET_NULL,
                                related_name='comment',
                                null=True)

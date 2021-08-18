@@ -6,7 +6,9 @@
         <a href="{% url 'articleapp:list' %}">
             게시글
         </a>
-        <span>점심</span>
+        <a href="{% url 'projectapp:list' %}">
+            게시판
+        </a>
         {% if not user.is_authenticated %}
         <span>
             <a href="{% url 'accountapp:login' %}">

@@ -9,6 +9,11 @@
         <a href="{% url 'projectapp:list' %}">
             게시판
         </a>
+        {% if user.is_authenticated %}
+        <a href="{% url 'subscribeapp:list' %}">
+            구독
+        </a>
+        {% endif %}
         {% if not user.is_authenticated %}
         <span>
             <a href="{% url 'accountapp:login' %}">

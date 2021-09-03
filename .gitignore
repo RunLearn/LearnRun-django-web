@@ -84,3 +84,6 @@ __pycache__/
 media/
 
 staticfiles/
+
+LearnRun_gcp
+LearnRun_gcp.pub
